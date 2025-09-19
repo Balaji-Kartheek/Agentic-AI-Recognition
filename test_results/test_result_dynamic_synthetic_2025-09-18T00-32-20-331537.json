@@ -1,0 +1,20 @@
+{
+  "test_id": "test_dynamic_synthetic_20250918_003215",
+  "channel_id": "a041fb81-0a49-4a89-a5ef-b1b5af2d9a35",
+  "scenario": "Confirm the appointment",
+  "scenario_result": "fail",
+  "transcript": "Agent: Thank you for calling University Health. If you're experiencing a medical emergency, hang up now and dial 911 immediately. How can I assist you today?",
+  "golden_transcript": "",
+  "evaluation_details": {
+    "failure_reason": "The conversation did not progress towards confirming an appointment.",
+    "what_went_well": "The agent adhered to safety policy by advising on emergency protocol.",
+    "what_to_improve": "The conversation needs to include steps towards confirming an appointment, such as asking for appointment details or providing confirmation information."
+  },
+  "metadata": {
+    "duration_ms": 58146,
+    "audio_files_sent": 0,
+    "total_messages": 1,
+    "evaluation_model": "gpt-4o",
+    "timestamp": "2025-09-18T00:32:20.331498"
+  }
+}

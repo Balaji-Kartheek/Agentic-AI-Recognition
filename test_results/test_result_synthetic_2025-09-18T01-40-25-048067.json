@@ -1,0 +1,26 @@
+{
+  "test_id": "test_synthetic_20250918_014020",
+  "channel_id": "a041fb81-0a49-4a89-a5ef-b1b5af2d9a35",
+  "scenario": "User wants to confirm an appointment",
+  "scenario_result": "fail",
+  "transcript": "Agent: Thank you for calling University Health. If you're experiencing a medical emergency, hang up now and dial 911 immediately. How can I assist you today?\nUser: Hello, I want to confirm my appointment. Please help me on this.\nAgent: Sure, I can help you confirm your appointment. First, I'll need to verify your identity. Can you please tell me your date of birth?\nUser: My name is John Doe.\nAgent: I can only respond in English at this time. Could you please provide your date of birth so I can assist you with confirming your appointment?\nUser: My date of birth is January 1st, nineteen ninety.\nAgent: Thank you for providing your date of birth as January 1st, 1990. To complete the verification, could you please say and spell out your last name for me? For example, \"Doe, D-O-E.\"\nUser: Thank you, that is all.\nAgent: I can only respond in English at this time. If you need assistance with confirming your appointment, could you please say and spell out your last name for me? For example, \"Doe, D-O-E.\"",
+  "golden_transcript": "",
+  "evaluation_details": {
+    "failure_reason": "The conversation did not complete the user's request to confirm the appointment due to lack of full identity verification.",
+    "what_went_well": [
+      "Agent maintained politeness and adhered to safety protocols.",
+      "Agent attempted to verify identity before proceeding."
+    ],
+    "what_to_improve": [
+      "Ensure the user understands the need for full identity verification to complete the request.",
+      "Clarify the importance of providing the last name to avoid user disengagement."
+    ]
+  },
+  "metadata": {
+    "duration_ms": 119728,
+    "audio_files_sent": 4,
+    "total_messages": 4,
+    "evaluation_model": "gpt-4o",
+    "timestamp": "2025-09-18T01:40:25.046108"
+  }
+}

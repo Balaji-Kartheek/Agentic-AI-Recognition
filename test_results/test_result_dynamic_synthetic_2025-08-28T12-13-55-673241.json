@@ -1,0 +1,20 @@
+{
+  "test_id": "test_dynamic_synthetic_20250828_121352",
+  "channel_id": "38966ae1-e876-41d2-9ea9-18ceafc7015f",
+  "scenario": "Confirm the appointment",
+  "scenario_result": "fail",
+  "transcript": "",
+  "golden_transcript": "Dynamic synthetic run: Confirm the appointment",
+  "evaluation_details": {
+    "failure_reason": "The conversation did not follow the expected logical sequence of steps and missed key information points.",
+    "what_went_well": "The initial greeting and intent to confirm an appointment were correctly identified.",
+    "what_to_improve": "Ensure the conversation follows the expected sequence and all key information points are addressed."
+  },
+  "metadata": {
+    "duration_ms": 0,
+    "audio_files_sent": 0,
+    "total_messages": 6,
+    "evaluation_model": "gpt-4o",
+    "timestamp": "2025-08-28T12:13:55.673201"
+  }
+}

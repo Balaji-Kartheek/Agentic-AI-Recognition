@@ -1,0 +1,25 @@
+{
+  "test_id": "test_40eb1681a081eec691b67e58d4fb1a4d_20250813_175541",
+  "channel_id": "38966ae1-e876-41d2-9ea9-18ceafc7015f",
+  "scenario": "User confirms their appointment with identity verification",
+  "scenario_result": "fail",
+  "transcript": "Agent: Thank you for calling University Health. If you're experiencing a medical emergency, hang up now and dial 911 immediately. How can I assist you today? User: I want to confirm my appointment. Agent: Sure, I can help you confirm your appointment. First, I'll need to verify your identity. Can you please tell me your date of birth? User: January 1st, 1990 Agent: Thank you. Now, could you please say and spell out your last name for me? For example, \"Smith, S-M-I-T-H.\"",
+  "golden_transcript": "Agent: Thank you for calling University Health. If you're experiencing a medical emergency, hang up now and dial 911 immediately. How can I assist you today?\nUser: I want to confirm my appointment.\nAgent: Sure, I can help you confirm your appointment. First, I'll need to verify your identity. Can you please tell me your date of birth?\nUser: January 1st, 1990\nAgent: Thank you. Now, could you please say and spell out your last name for me? For example, \"Smith, S-M-I-T-H.\"",
+  "cover_story": {
+    "failure_reason": "The actual conversation transcript was not provided for evaluation.",
+    "what_went_well": "The golden conversation path is clear and logical.",
+    "what_to_improve": "Provide the actual conversation transcript for accurate evaluation."
+  },
+  "metadata": {
+    "duration_ms": 0,
+    "audio_files_sent": 2,
+    "total_messages": 2,
+    "evaluation_model": "gpt-4o",
+    "timestamp": "2025-08-13T17:55:45.239642"
+  },
+  "evaluation_details": {
+    "failure_reason": "The actual conversation transcript was not provided for evaluation.",
+    "what_went_well": "The golden conversation path is clear and logical.",
+    "what_to_improve": "Provide the actual conversation transcript for accurate evaluation."
+  }
+}

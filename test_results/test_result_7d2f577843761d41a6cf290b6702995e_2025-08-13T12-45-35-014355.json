@@ -1,0 +1,25 @@
+{
+  "test_id": "test_7d2f577843761d41a6cf290b6702995e_20250813_124530",
+  "channel_id": "38966ae1-e876-41d2-9ea9-18ceafc7015f",
+  "scenario": "User requests to reschedule an appointment",
+  "scenario_result": "fail",
+  "transcript": "Agent: Thank you for calling University Health. If you're experiencing a medical emergency, hang up now and dial 911 immediately. How can I assist you today? User: Can you help me rescheduling the appointment, please? Agent: Sure, I can help you with rescheduling your appointment. First, I'll need to verify your identity. Can you please tell me your date of birth? User: January 1st, 1990 Agent: Thank you. Now, could you please say and spell out your last name for me? For example, Smith, S-M-I-T-H. User: Thank you. Bye bye. Agent: Just to confirm, did you mean Cadence, spelled C-A-D-E-N-C-E? User: કાડિંસિસંાસં ક్યે ડિકારિંસીરિં વિ યનસિ વિ User: Yes. Agent: Thanks for sharing your last name. Lastly, may I have your ZIP code? User: 7 8 2 2 8 Agent: Thank you, Billy Cadence. I've found your records and we can proceed with rescheduling your appointment. Let me fetch your upcoming appointments. Agent: You have an appointment on August 22nd, 2025, at 8:00 AM with Syed Ahsan. Would you like to reschedule this appointment? Agent: Alright, since you don't want to reschedule this appointment, is there anything else I can assist you with today? User: No, thanks. User: No thanks. Agent: Thank you for calling University Health, Billy. Have a nice day! Goodbye!",
+  "golden_transcript": "Agent: Thank you for calling University Health. If you're experiencing a medical emergency, hang up now and dial 911 immediately. How can I assist you today?\nUser: Can you help me rescheduling the appointment, please?\nAgent: Sure, I can help you with rescheduling your appointment. First, I'll need to verify your identity. Can you please tell me your date of birth?\nUser: January 1st, 1990\nAgent: Thank you. Now, could you please say and spell out your last name for me? For example, Smith, S-M-I-T-H.\nUser: Thank you. Bye bye.\nAgent: Just to confirm, did you mean Cadence, spelled C-A-D-E-N-C-E?\nUser: કાડિંસિસંાસં ક్યે ડિકારિંસીરિં વિ યનસિ વિ\nUser: Yes.\nAgent: Thanks for sharing your last name. Lastly, may I have your ZIP code?\nUser: 7 8 2 2 8\nAgent: Thank you, Billy Cadence. I've found your records and we can proceed with rescheduling your appointment. Let me fetch your upcoming appointments.\nAgent: You have an appointment on August 22nd, 2025, at 8:00 AM with Syed Ahsan. Would you like to reschedule this appointment?\nAgent: Alright, since you don't want to reschedule this appointment, is there anything else I can assist you with today?\nUser: No, thanks.\nUser: No thanks.\nAgent: Thank you for calling University Health, Billy. Have a nice day! Goodbye!",
+  "cover_story": {
+    "failure_reason": "The user unexpectedly ended the conversation after spelling the last name, and the agent continued without user confirmation.",
+    "what_went_well": "The initial steps of identity verification were correctly followed.",
+    "what_to_improve": "Ensure the agent confirms user intent before proceeding with appointment details."
+  },
+  "metadata": {
+    "duration_ms": 0,
+    "audio_files_sent": 0,
+    "total_messages": 7,
+    "evaluation_model": "gpt-4o",
+    "timestamp": "2025-08-13T12:45:35.014224"
+  },
+  "evaluation_details": {
+    "failure_reason": "The user unexpectedly ended the conversation after spelling the last name, and the agent continued without user confirmation.",
+    "what_went_well": "The initial steps of identity verification were correctly followed.",
+    "what_to_improve": "Ensure the agent confirms user intent before proceeding with appointment details."
+  }
+}

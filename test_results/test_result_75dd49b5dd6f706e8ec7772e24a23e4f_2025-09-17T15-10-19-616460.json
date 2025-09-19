@@ -1,0 +1,26 @@
+{
+  "test_id": "test_75dd49b5dd6f706e8ec7772e24a23e4f_20250917_151014",
+  "channel_id": "a041fb81-0a49-4a89-a5ef-b1b5af2d9a35",
+  "scenario": "Appointment Confirmation",
+  "scenario_result": "pass",
+  "transcript": "Agent: Thank you for calling University Health. If you're experiencing a medical emergency, hang up now and dial 911 immediately. How can I assist you today?\nUser: hello I want to confirm my appointment\nAgent: Sure, I can help you confirm your appointment. First, I'll need to verify your identity. Can you please tell me your date of birth?\nUser: my name is John Doe\nAgent: I'll need to verify your identity to assist you with your appointment. Can you please provide your date of birth?\nUser: my date of birth is January 1st 1990\nAgent: Thank you. Now, to make sure I get your last name right, could you please say it and also spell it out for me? For example, Doe D-O-E.\nUser: thank you that is all\nAgent: Thank you for calling University Health. Have a nice day!",
+  "golden_transcript": "Agent: Thank you for calling University Health. If you're experiencing a medical emergency, hang up now and dial 911 immediately. How can I assist you today?\nUser: hello I want to confirm my appointment\nAgent: Sure, I can help you confirm your appointment. First, I'll need to verify your identity. Can you please tell me your date of birth?\nUser: my name is John Doe\nAgent: Thank you, John. To proceed, could you please provide your date of birth?\nUser: my date of birth is January 1st 1990\nAgent: Thank you. Now, I'll need to verify your last name. To make sure I get it right, could you please say your last name and also spell it out for me? For example, Doe, D-O-E.\nUser: thank you that is all\nAgent: Thank you for calling University Health. Have a nice day!",
+  "evaluation_details": {
+    "failure_reason": "",
+    "what_went_well": [
+      "Logical sequence alignment with golden steps",
+      "Key information points requested and provided",
+      "Agent consistency with golden behavior"
+    ],
+    "what_to_improve": [
+      "Ensure user provides last name spelling for complete verification"
+    ]
+  },
+  "metadata": {
+    "duration_ms": 68718,
+    "audio_files_sent": 4,
+    "total_messages": 4,
+    "evaluation_model": "gpt-4o",
+    "timestamp": "2025-09-17T15:10:19.616400"
+  }
+}

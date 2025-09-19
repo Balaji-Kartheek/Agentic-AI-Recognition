@@ -1,0 +1,20 @@
+{
+  "test_id": "test_dynamic_synthetic_20250829_105505",
+  "channel_id": "38966ae1-e876-41d2-9ea9-18ceafc7015f",
+  "scenario": "Confirm the appointment",
+  "scenario_result": "fail",
+  "transcript": "User: I need to confirm my appointment. Bot: Sure, can you provide the appointment ID? User: It's 12345. Bot: Thank you. Your appointment on September 5th at 3 PM is confirmed. User: Great, thanks. Bot: You're welcome!",
+  "golden_transcript": "Dynamic synthetic run: Confirm the appointment",
+  "evaluation_details": {
+    "failure_reason": "The bot did not ask for the user's name, which was a key information point in the golden conversation.",
+    "what_went_well": "The bot successfully confirmed the appointment once the ID was provided.",
+    "what_to_improve": "Ensure the bot requests the user's name as part of the confirmation process to match the golden conversation."
+  },
+  "metadata": {
+    "duration_ms": 0,
+    "audio_files_sent": 0,
+    "total_messages": 7,
+    "evaluation_model": "gpt-4o",
+    "timestamp": "2025-08-29T10:55:09.034514"
+  }
+}

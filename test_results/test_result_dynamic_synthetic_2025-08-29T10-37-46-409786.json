@@ -1,0 +1,20 @@
+{
+  "test_id": "test_dynamic_synthetic_20250829_103742",
+  "channel_id": "38966ae1-e876-41d2-9ea9-18ceafc7015f",
+  "scenario": "Cancel the appointment",
+  "scenario_result": "fail",
+  "transcript": "User: I need to cancel my appointment. Bot: Sure, can you provide the appointment ID? User: It's 12345. Bot: Appointment 12345 is canceled. Anything else I can help with? User: No, that's all. Bot: Have a great day!",
+  "golden_transcript": "Dynamic synthetic run: Cancel the appointment",
+  "evaluation_details": {
+    "failure_reason": "The bot did not confirm the cancellation details as expected in the golden conversation.",
+    "what_went_well": "The bot correctly identified the user's intent to cancel the appointment and requested the appointment ID.",
+    "what_to_improve": "Ensure the bot confirms the cancellation details and provides a summary as per the golden conversation."
+  },
+  "metadata": {
+    "duration_ms": 0,
+    "audio_files_sent": 0,
+    "total_messages": 6,
+    "evaluation_model": "gpt-4o",
+    "timestamp": "2025-08-29T10:37:46.409690"
+  }
+}

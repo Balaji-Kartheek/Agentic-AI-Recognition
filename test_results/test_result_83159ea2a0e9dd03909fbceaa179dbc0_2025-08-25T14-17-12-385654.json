@@ -1,0 +1,20 @@
+{
+  "test_id": "test_83159ea2a0e9dd03909fbceaa179dbc0_20250825_141705",
+  "channel_id": "38966ae1-e876-41d2-9ea9-18ceafc7015f",
+  "scenario": "User requests to cancel an appointment",
+  "scenario_result": "fail",
+  "transcript": "Agent: Thank you for calling University Health. If you're experiencing a medical emergency, hang up now and dial 911 immediately. How can I assist you today? User: I want to cancel my appointment. Agent: Sure, I can help you with canceling your appointment. First, I'll need to verify your identity. Can you please tell me your date of birth? User: January 22nd, 1974 Agent: Thank you. To proceed, could you please say your last name and spell it out for me? For example, \"Smith, S-M-I-T-H.\" User: Pepper, P-E-P-P-E-R Agent: Thanks for sharing your last name. Lastly, may I have your ZIP code? User: 7, 8, 2, 2, 9 Agent: Thank you, Tony Pepper. I've found your records and we can proceed with canceling your appointment. I'll fetch your upcoming appointments now. Agent: It appears that there are no upcoming appointments for you at the moment. Would you like me to connect you to a live agent for further assistance? User: No, thanks. It's fine. Agent: You're welcome. Thank you for calling University Health. Have a nice day!",
+  "golden_transcript": "Agent: Thank you for calling University Health. If you're experiencing a medical emergency, hang up now and dial 911 immediately. How can I assist you today?\nUser: I want to cancel my appointment.\nAgent: Sure, I can help you with canceling your appointment. First, I'll need to verify your identity. Can you please tell me your date of birth?\nUser: January 22nd, 1974\nAgent: Thank you. To proceed, could you please say your last name and spell it out for me? For example, \"Smith, S-M-I-T-H.\"\nUser: పెపర్ పి ఇ పి పి ఆ\nAgent: Thanks for sharing your last name. Lastly, may I have your ZIP code?\nUser: 7, 8, 2, 2, 9\nAgent: Thank you, Tony Pepper. I've found your records and we can proceed with canceling your appointment. I'll fetch your upcoming appointments now.\nAgent: It appears that there are no upcoming appointments for you at the moment. Would you like me to connect you to a live agent for further assistance?\nUser: No, thanks. It's fine.\nAgent: You're welcome. Thank you for calling University Health. Have a nice day!",
+  "evaluation_details": {
+    "failure_reason": "User spelled last name in English instead of Telugu as in the golden conversation.",
+    "what_went_well": "The conversation followed the correct logical sequence and verified identity accurately.",
+    "what_to_improve": "Ensure consistency in the language used for spelling names to match the golden conversation."
+  },
+  "metadata": {
+    "duration_ms": 0,
+    "audio_files_sent": 5,
+    "total_messages": 5,
+    "evaluation_model": "gpt-4o",
+    "timestamp": "2025-08-25T14:17:12.385621"
+  }
+}

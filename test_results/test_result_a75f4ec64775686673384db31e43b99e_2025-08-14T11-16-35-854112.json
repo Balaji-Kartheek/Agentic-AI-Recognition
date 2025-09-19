@@ -1,0 +1,20 @@
+{
+  "test_id": "test_a75f4ec64775686673384db31e43b99e_20250814_111626",
+  "channel_id": "38966ae1-e876-41d2-9ea9-18ceafc7015f",
+  "scenario": "User confirms an appointment with University Health",
+  "scenario_result": "fail",
+  "transcript": "Agent: Thank you for calling University Health. If you're experiencing a medical emergency, hang up now and dial 911 immediately. How can I assist you today? User: I want to confirm my appointment Agent: Sure, I can help you confirm your appointment. First, I'll need to verify your identity. Can you please tell me your date of birth? User: January 1st, 1990 Agent: Thank you. To make sure I get your last name right, could you please say it and also spell it out for me? For example, Smith S-M-I-T-H. User: Black. B-L-A-C-K. Agent: Thanks for sharing your last name. Lastly, may I have your ZIP code? User: 7 8 2 4 9 Agent: Thank you, Ashley Black. I've found your records and we can proceed with confirming your appointment. Please hold on a moment while I fetch your upcoming appointments. Agent: You have an appointment on August 20th, 2025, at 8:00 AM with Karolina Dziadkowiec, specializing in Gastroenterology. Would you like to confirm this appointment? User: Yes. Agent: Your appointment on August 20th, 2025, at 8:00 AM with Karolina Dziadkowiec has been successfully confirmed. Is there anything else I can assist you with today? User: Nothing. Agent: Thank you for calling University Health. Have a nice day! Goodbye!",
+  "golden_transcript": "Agent: Thank you for calling University Health. If you're experiencing a medical emergency, hang up now and dial 911 immediately. How can I assist you today?\nUser: I want to confirm my appointment\nAgent: Sure, I can help you confirm your appointment. First, I'll need to verify your identity. Can you please tell me your date of birth?\nUser: January 1st, 1990\nAgent: Thank you. To make sure I get your last name right, could you please say it and also spell it out for me? For example, Smith S-M-I-T-H.\nUser: Black. B-L-A-C-K.\nAgent: Thanks for sharing your last name. Lastly, may I have your ZIP code?\nUser: 7 8 2 4 9\nAgent: Thank you, Ashley Black. I've found your records and we can proceed with confirming your appointment. Please hold on a moment while I fetch your upcoming appointments.\nAgent: You have an appointment on August 20th, 2025, at 8:00 AM with Karolina Dziadkowiec, specializing in Gastroenterology. Would you like to confirm this appointment?\nUser: Yes.\nAgent: Your appointment on August 20th, 2025, at 8:00 AM with Karolina Dziadkowiec has been successfully confirmed. Is there anything else I can assist you with today?\nUser: Nothing.\nAgent: Thank you for calling University Health. Have a nice day! Goodbye!",
+  "evaluation_details": {
+    "failure_reason": "The conversation deviated significantly by not verifying the user's identity correctly.",
+    "what_went_well": "The agent correctly identified the user's request and attempted to confirm the appointment.",
+    "what_to_improve": "Ensure the identity verification process is consistent and matches the expected sequence."
+  },
+  "metadata": {
+    "duration_ms": 0,
+    "audio_files_sent": 6,
+    "total_messages": 6,
+    "evaluation_model": "gpt-4o",
+    "timestamp": "2025-08-14T11:16:35.853971"
+  }
+}

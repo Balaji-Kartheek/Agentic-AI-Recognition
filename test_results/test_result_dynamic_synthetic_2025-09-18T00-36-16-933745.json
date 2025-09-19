@@ -1,0 +1,20 @@
+{
+  "test_id": "test_dynamic_synthetic_20250918_003544",
+  "channel_id": "a041fb81-0a49-a5ef-b1b5af2d9a35",
+  "scenario": "Confirm the appointment",
+  "scenario_result": "fail",
+  "transcript": "Agent: Thank you for calling University Health. If you're experiencing a medical emergency, hang up now and dial 911 immediately. How can I assist you today?\nUser: Hi, I'd like to confirm my appointment, please.\nAgent: Sure, I can help you confirm your appointment. First, I'll need to verify your identity. Can you please tell me your date of birth?\nUser: It's January 15, 1985.\nAgent: Thank you. To make sure I get your last name right, could you please say it and also spell it out for me? For example, Smith S-M-I-T-H.\nUser: User: It's Johnson, J-O-H-N-S-O-N.\nAgent: Just to confirm, did you mean Johnson, spelled J-O-H-N-S-O-N?\nUser: Yes, that's correct.\nAgent: It seems like I couldn't find a record with the information provided. Could you please confirm your date of birth and last name once again?\nUser: My date of birth is January 15, 1985, and my last name is Johnson, J-O-H-N-S-O-N.\nAgent: Just to confirm, did you mean Johnson, spelled J-O-H-N-S-O-N?\nUser: Yes, that's correct.\nAgent: I apologize, but I'm still unable to locate your record. Would you like me to transfer you to a live agent for further assistance?",
+  "golden_transcript": "",
+  "evaluation_details": {
+    "failure_reason": "The conversation failed to confirm the appointment due to repeated inability to locate the user's record, leading to an unresolved scenario.",
+    "what_went_well": "The agent followed appropriate procedures for identity verification and maintained a polite and professional tone.",
+    "what_to_improve": "The system should improve its ability to locate records accurately or provide alternative solutions more efficiently to avoid unnecessary repetition."
+  },
+  "metadata": {
+    "duration_ms": 122707,
+    "audio_files_sent": 0,
+    "total_messages": 6,
+    "evaluation_model": "gpt-4o",
+    "timestamp": "2025-09-18T00:36:16.933647"
+  }
+}

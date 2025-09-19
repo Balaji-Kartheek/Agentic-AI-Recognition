@@ -1,0 +1,20 @@
+{
+  "test_id": "test_854eae75e1851545d5718c382995977a_20250813_180522",
+  "channel_id": "38966ae1-e876-41d2-9ea9-18ceafc7015f",
+  "scenario": "User attempts to confirm an appointment but record is not found",
+  "scenario_result": "fail",
+  "transcript": "Agent: Thank you for calling University Health. If you're experiencing a medical emergency, hang up now and dial 911 immediately. How can I assist you today? User: Hi, I just want to confirm my appointment. Agent: Sure, I can help you confirm your appointment. First, I'll need to verify your identity. Can you please tell me your date of birth? User: June 3rd, 1990. Agent: Thank you. Could you please provide your last name and also spell it out for me? For example, \"Smith S-M-I-T-H.\" User: It is Kennedy, K E N N E D Y. Agent: I'm unable to find a record with the information provided. Could you please confirm your date of birth and last name once more? User: Date of birth is June 3rd, 1990. Last name is Kennedy, K-E-N-N-E-D-Y. Agent: It seems I'm still unable to locate a record with the provided information. There might be a technical issue. Please try again after a while or contact our support team for further assistance. Is there anything else I can help you with? User: Nothing. Agent: Thank you for calling University Health. Have a nice day!",
+  "golden_transcript": "Agent: Thank you for calling University Health. If you're experiencing a medical emergency, hang up now and dial 911 immediately. How can I assist you today?\nUser: Hi, I just want to confirm my appointment.\nAgent: Sure, I can help you confirm your appointment. First, I'll need to verify your identity. Can you please tell me your date of birth?\nUser: June 3rd, 1990.\nAgent: Thank you. Could you please provide your last name and also spell it out for me? For example, \"Smith S-M-I-T-H.\"\nUser: It is Kennedy, K E N N E D Y.\nAgent: I'm unable to find a record with the information provided. Could you please confirm your date of birth and last name once more?\nUser: Date of birth is June 3rd, 1990. Last name is Kennedy, K-E-N-N-E-D-Y.\nAgent: It seems I'm still unable to locate a record with the provided information. There might be a technical issue. Please try again after a while or contact our support team for further assistance. Is there anything else I can help you with?\nUser: Nothing.\nAgent: Thank you for calling University Health. Have a nice day!",
+  "evaluation_details": {
+    "failure_reason": "The conversation deviated significantly as the agent failed to locate the record and did not offer alternative solutions.",
+    "what_went_well": "The agent followed the initial steps correctly by verifying identity.",
+    "what_to_improve": "The agent should provide alternative solutions or escalate the issue when unable to locate a record."
+  },
+  "metadata": {
+    "duration_ms": 0,
+    "audio_files_sent": 5,
+    "total_messages": 5,
+    "evaluation_model": "gpt-4o",
+    "timestamp": "2025-08-13T18:05:30.753543"
+  }
+}

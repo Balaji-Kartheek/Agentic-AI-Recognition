@@ -1,0 +1,20 @@
+{
+  "test_id": "test_e2550cc8450d00fa47164d3797bb775c_20250814_155605",
+  "channel_id": "38966ae1-e876-41d2-9ea9-18ceafc7015f",
+  "scenario": "User attempts to reschedule a medical appointment",
+  "scenario_result": "fail",
+  "transcript": "Agent: Thank you for calling University Health. If you're experiencing a medical emergency, hang up now and dial 911 immediately. How can I assist you today? User: I want to reschedule my appointment. Agent: Sure, I can help you with rescheduling your appointment. First, I'll need to verify your identity. Can you please tell me your date of birth? User: September 30th, 1992 Agent: Thank you. Now, could you please provide your last name and spell it out for me? For example, \"Smith S-M-I-T-H.\" User: Williams W I L L I A M S Agent: Thanks for sharing your last name. Lastly, may I have your ZIP code? User: 7, 8, 2, 5, 7 Agent: Thank you, Patricia Williams. I've found your records, and we can proceed with rescheduling your appointment. Let me fetch your upcoming appointments. Agent: You have an appointment on August 18th, 2025, at 9:00 AM with Jamie Cano-Gomez. Would you like to reschedule this one? User: Γεια σας. Agent: Could you please provide the reason for rescheduling this appointment? User: I won't be available in the town. Agent: Thank you for letting me know. I'll find available slots for rescheduling. Let's see what's open. Agent: Unfortunately, I wasn't able to find available slots for rescheduling at this time. Would you like me to connect you to a live agent for further assistance? User: No, thanks, it's fine Agent: Got it. Is there anything else I can assist you with today? User: Nothing. Agent: Thank you for calling University Health. Have a nice day! Goodbye.",
+  "golden_transcript": "Agent: Thank you for calling University Health. If you're experiencing a medical emergency, hang up now and dial 911 immediately. How can I assist you today?\nUser: I want to reschedule my appointment.\nAgent: Sure, I can help you with rescheduling your appointment. First, I'll need to verify your identity. Can you please tell me your date of birth?\nUser: September 30th, 1992\nAgent: Thank you. Now, could you please provide your last name and spell it out for me? For example, \"Smith S-M-I-T-H.\"\nUser: Williams W I L L I A M S\nAgent: Thanks for sharing your last name. Lastly, may I have your ZIP code?\nUser: 7, 8, 2, 5, 7\nAgent: Thank you, Patricia Williams. I've found your records, and we can proceed with rescheduling your appointment. Let me fetch your upcoming appointments.\nAgent: You have an appointment on August 18th, 2025, at 9:00 AM with Jamie Cano-Gomez. Would you like to reschedule this one?\nUser: Γεια σας.\nAgent: Could you please provide the reason for rescheduling this appointment?\nUser: I won't be available in the town.\nAgent: Thank you for letting me know. I'll find available slots for rescheduling. Let's see what's open.\nAgent: Unfortunately, I wasn't able to find available slots for rescheduling at this time. Would you like me to connect you to a live agent for further assistance?\nUser: No, thanks, it's fine\nAgent: Got it. Is there anything else I can assist you with today?\nUser: Nothing.\nAgent: Thank you for calling University Health. Have a nice day! Goodbye.",
+  "evaluation_details": {
+    "failure_reason": "The user unexpectedly switched to Greek language, which was not handled by the agent.",
+    "what_went_well": "The agent correctly verified the user's identity and attempted to reschedule the appointment.",
+    "what_to_improve": "Implement language detection and handling to manage unexpected language switches."
+  },
+  "metadata": {
+    "duration_ms": 0,
+    "audio_files_sent": 8,
+    "total_messages": 8,
+    "evaluation_model": "gpt-4o",
+    "timestamp": "2025-08-14T15:56:15.807356"
+  }
+}

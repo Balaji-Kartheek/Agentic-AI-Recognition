@@ -1,0 +1,34 @@
+requests==2.31.0
+websockets==12.0
+python-dotenv==1.0.0
+openai==1.12.0
+glob2==0.7
+pathlib2==2.3.7 
+streamlit==1.36.0
+asyncio
+google-cloud-texttospeech
+gtts
+pydub
+edge-tts
+pyttsx3
+TTS
+melo
+soundfile
+numpy
+torch
+transformers
+httpx==0.27.2
+# Coqui TTS dependencies
+numba
+onnxruntime
+scipy
+# Gruut phonemizer to avoid espeak
+gruut
+gruut[en]
+gruut_lang_en
+# brew install ffmpeg
+# pip install -U pip setuptools wheel
+# pip install git+https://github.com/myshell-ai/MeloTTS.git
+# pip install unidic-lite
+# pip install unidic
+# python -m unidic download

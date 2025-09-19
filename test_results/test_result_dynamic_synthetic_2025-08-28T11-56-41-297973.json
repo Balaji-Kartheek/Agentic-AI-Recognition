@@ -1,0 +1,20 @@
+{
+  "test_id": "test_dynamic_synthetic_20250828_115637",
+  "channel_id": "38966ae1-e876-41d2-9ea9-18ceafc7015f",
+  "scenario": "Confirm the appointment",
+  "scenario_result": "fail",
+  "transcript": "User: I need to confirm my appointment. Bot: Sure, can you provide your appointment ID? User: It's 12345. Bot: Thank you. Your appointment on October 5th at 3 PM is confirmed. User: Great, thanks. Bot: You're welcome!",
+  "golden_transcript": "Dynamic synthetic run: Confirm the appointment",
+  "evaluation_details": {
+    "failure_reason": "The conversation missed a step where the bot should have verified the user's identity before confirming the appointment.",
+    "what_went_well": "The bot correctly asked for the appointment ID and confirmed the appointment details.",
+    "what_to_improve": "Ensure the bot verifies user identity before confirming appointments to enhance security."
+  },
+  "metadata": {
+    "duration_ms": 0,
+    "audio_files_sent": 0,
+    "total_messages": 6,
+    "evaluation_model": "gpt-4o",
+    "timestamp": "2025-08-28T11:56:41.297901"
+  }
+}

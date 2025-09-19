@@ -1,0 +1,20 @@
+{
+  "test_id": "test_synthetic_20250918_002936",
+  "channel_id": "a041fb81-0a49-4a89-a5ef-b1b5af2d9a35",
+  "scenario": "User wants to confirm an appointment",
+  "scenario_result": "fail",
+  "transcript": "Agent: Thank you for calling University Health. If you're experiencing a medical emergency, hang up now and dial 911 immediately. How can I assist you today?\nUser: Hello, I want to confirm my appointment.\nAgent: Sure, I can help you confirm your appointment. First, I'll need to verify your identity. Can you please tell me your date of birth?\nUser: My name is John Doe.\nAgent: I appreciate the information, but I'll need to verify your date of birth first. Could you please provide it?\nUser: My date of birth is January 1st, nineteen ninety.\nAgent: Thank you. Now, to make sure I get your last name right, could you please say it and also spell it out for me? For example, \"Doe, D-O-E.\"\nUser: Thank you, that is all.\nAgent: You're welcome! If you need any further assistance in the future, feel free to reach out. Thank you for calling University Health. Have a nice day!",
+  "golden_transcript": "",
+  "evaluation_details": {
+    "failure_reason": "The conversation did not complete the user's request to confirm the appointment.",
+    "what_went_well": "- The agent maintained politeness and appropriateness.\n- The agent adhered to safety protocols.",
+    "what_to_improve": "- Ensure the user's request is fully addressed before ending the call.\n- Avoid ending the conversation prematurely without confirming the appointment."
+  },
+  "metadata": {
+    "duration_ms": 78894,
+    "audio_files_sent": 4,
+    "total_messages": 4,
+    "evaluation_model": "gpt-4o",
+    "timestamp": "2025-09-18T00:29:41.078527"
+  }
+}
