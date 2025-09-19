@@ -44,9 +44,22 @@ class Config:
         self.timeout = 30000
         
         # OpenAI Configuration
-        # Prefer Streamlit secrets; fall back to environment variable
-        self.openai_api_key = st.secrets.get("OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY")
+        # Prefer Streamlit secrets; support both flat and namespaced TOML
+        # e.g. either OPENAI_API_KEY="..." or [OPEN-AI]\nOPENAI_API_KEY="..."
+        secrets_api_key = None
+        try:
+            # flat key at root
+            secrets_api_key = st.secrets.get("OPENAI_API_KEY")
+            if not secrets_api_key and "OPEN-AI" in st.secrets:
+                # namespaced under [OPEN-AI]
+                section = st.secrets["OPEN-AI"]
+                # section can be dict-like or Secrets object
+                secrets_api_key = section.get("OPENAI_API_KEY") if hasattr(section, "get") else section["OPENAI_API_KEY"]
+        except Exception:
+            pass
+        self.openai_api_key = secrets_api_key or os.getenv("OPENAI_API_KEY")
         self.llm_model = os.getenv('LLM_MODEL', 'gpt-4o')
+
 
         # Synthetic run configuration
         # When true, the evaluator will skip fetching/downloading and use provided files/texts
